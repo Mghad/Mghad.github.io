@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <!––Mitchell's code for his first website 1/29/2019 ––>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
 <body>
 
-<h2>HTML Forms</h2>
+<h2>Emergency Re-Router</h2>
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2> Add Elements</h2><br>
 
 <form action="/action_page.php">
-  Add Elements<br>
   Destination:<br>
   <input type="submit" value="Add Destination">
   <br>
@@ -16,11 +49,17 @@
   Choose Service:<br>
   <input type="checkbox" name="service" value="fire"> Fire<br>
   <input type="checkbox" name="service" value="police"> Police<br>
-  <input type="checkbox" name="service" value="medical"> Medical<br><hr><br>
+  <input type="checkbox" name="service" value="medical"> Medical<br><br><hr><br>
   <input type="submit" value="Create Routes"><br><hr><br>
 </form> 
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</div>
+
+<div class="column right" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
 
 </body>
 </html>
