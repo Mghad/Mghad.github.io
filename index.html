@@ -12,7 +12,7 @@
 .column {
   float: left;
   padding: 10px;
-  height: 600px; /* Should be removed. Only for demonstration */
+  height: 500px; /* Should be removed. Only for demonstration */
 }
 
 .left {
@@ -36,7 +36,7 @@
 <h2>Emergency Re-Router</h2>
 
 <div class="row">
-  <div class="column left" style="background-color:#aaa;">
+  <div class="column left" style="background-color:#9FC8DD;">
     <h2> Add Elements</h2>
 
 <form action="/action_page.php">
@@ -45,22 +45,24 @@
   <br>
   Obsticale:<br>
   <input type="submit" value="Add Line">
-  <br><hr><br>
+  <br><br><hr><br>
   Choose Service:<br>
   <input type="checkbox" name="service" value="fire"> Fire<br>
   <input type="checkbox" name="service" value="police"> Police<br>
   <input type="checkbox" name="service" value="medical"> Medical<br><br><hr><br>
-  <input type="submit" value="Create Routes"><br><hr><br>
+  <input type="submit" value="Create Routes"><br><br><hr>
 </form> 
 
 
 </div>
 
-<div class="column right" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+<div class="column right" style="background-color:#9BDDFF;">
+    <h2>Map Area</h2>
   </div>
 </div>
-
+<form action="/action_page.php">
+  <input type="submit" value="Download">
+  <input type="submit" value="Save Analysis">
+</form> 
 </body>
 </html>
