@@ -1,6 +1,86 @@
+<!DOCTYPE html>
+<!––Mitchell's code for his first website 1/29/2019 ––>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+   /* Should be removed. Only for demonstration */
+}
+.left {
+  width: 25%;
+}
+.right {
+  width: 75%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </head>
 <body>
+<div align="center">
+<h1>Emergency Re-Router</h1>
+</div>
+<div class="row">
+  <div class="column left" style="background-color:#9FC8DD;">
+    <h2><td> Add Elements</td></h2>
+
+<form action="">
+  <br>Destination:<br>
+  <div align="center">
+  <input type="button" value="Add Destination">
+  </div>
+  <br>
+  Obstacle:<br>
+  <div align="center">
+  <input type="button" value="Add Line">
+  </div>
+  <br><hr><br>
+  Choose Service:<br>
+  <input type="checkbox" name="service" value="fire"> Fire<br>
+  <input type="checkbox" name="service" value="police"> Police<br>
+  <input type="checkbox" name="service" value="medical"> Medical<br><br><hr><br>
+  <div align="center">
+  <input type="button" value="Create Routes">
+  </div>
+  <br><hr>
+</form> 
+
+
+</div>
+
+<div class="column right" style="background-color:#9BDDFF;">
+    <h2>Map Area</h2>
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  </div>
+</div><br><br>
+<div align="right">
+<form action="">
+  <input type="button" value="Download">
+  <input type="button" value="Save Analysis">
+</form> 
+</div>
 </body>
 </html>
