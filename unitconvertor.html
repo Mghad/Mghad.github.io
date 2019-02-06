@@ -4,7 +4,6 @@
   
   body {
   background-image: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
-  vertical-align: middle;
   }
    
   input[type=button], input[type=submit], input[type=reset] {
@@ -61,9 +60,16 @@
   border: 3px solid #f64f59;
   border-radius: 6px;
   }
+	
+  .center {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  }
 </style>
 </head>
 <body>
+  <div class="center">
   <h1>Distance Converter</h1>
   
   <form>
@@ -91,6 +97,6 @@
   
   <input type="button" value="Convert Units">
   </form>
-  
+  </div>
 </body>
 </html>
