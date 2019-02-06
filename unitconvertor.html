@@ -78,7 +78,7 @@
   
   <form>
   <p>Insert Number:</p>
-  <input type="text" name="num">
+  <input id="unum" type="number" placeholder="Insert Number">
   <p>Convert From:</p>
   </div>
   <div class="center2">
@@ -112,7 +112,7 @@
   </div>
 <script>
 	function lencon(){
-			var unum = document.getElementByName('num');
+			var unum = document.getElementById('unum').value;
 			var onum;
 			var in1 = document.getElementsByName('input');
 			var in1_value;
