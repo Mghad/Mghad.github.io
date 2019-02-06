@@ -112,6 +112,8 @@
   </div>
 <script>
 	function lencon(){
+			var unum = document.getElementByName('num');
+			var onum;
 			var in1 = document.getElementsByName('input');
 			var in1_value;
 		for(var i = 0; i < in1.length; i++){
@@ -126,7 +128,7 @@
         	out1_value = out1[i].value;
 		}
     		}
-		alert(out1_value + " " + in1_value)
+		alert(unum + " " + out1_value + " is " + onum + " " + in1_value)
 	}
 </script>
 </body>
