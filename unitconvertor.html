@@ -24,31 +24,29 @@
   <h1>Distance Converter</h1>
   
   <form>
+  <p>Insert Number:</p>
+  <input type="text" name="num">
   <p>Convert From:</p>
-  <select name="from">
-    <option value="1">Inches</option>
-    <option value="2">Feet</option>
-    <option value="3">Yards</option>
-    <option value="4">Miles</option>
-    <option value="5">Centimeters</option>
-    <option value="6">Meters</option>
-    <option value="7">Kilometers</option>
-  </select>
+  <input type="radio" name="input" value="Inches" checked>Inches<br>
+  <input type="radio" name="input" value="Feet">Feet<br>
+  <input type="radio" name="input" value="Yards">Yards<br>
+  <input type="radio" name="input" value="Miles">Miles<br>
+  <input type="radio" name="input" value="Centimeters">Centimeters<br>
+  <input type="radio" name="input" value="Meters">Meters<br>
+  <input type="radio" name="input" value="Centimeters">Kilometers<br>
   <br>
-  
+  <input type="radio" name="output" value="Inches" checked>Inches<br>
+  <input type="radio" name="output" value="Feet">Feet<br>
+  <input type="radio" name="output" value="Yards">Yards<br>
+  <input type="radio" name="output" value="Miles">Miles<br>
+  <input type="radio" name="output" value="Centimeters">Centimeters<br>
+  <input type="radio" name="output" value="Meters">Meters<br>
+  <input type="radio" name="output" value="Centimeters">Kilometers<br>
   <p>Convert To:</p>
-  <select name="to">
-    <option value="1">Inches</option>
-    <option value="2">Feet</option>
-    <option value="3">Yards</option>
-    <option value="4">Miles</option>
-    <option value="5">Centimeters</option>
-    <option value="6">Meters</option>
-    <option value="7">Kilometers</option>
-  </select>
+  
   <br><br>
   
-  <button class="button">Convert Units!</button>
+  <input type="submit" value="Convert Units">
   </form>
   
 </body>
