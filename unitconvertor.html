@@ -69,6 +69,7 @@
   margin: auto;
   width: 15%;
   }
+
 </style>
 </head>
 <body>
@@ -81,6 +82,7 @@
   <p>Convert From:</p>
   </div>
   <div class="center2">
+	  
   <input type="radio" name="input" value="Inches" checked>Inches<br>
   <input type="radio" name="input" value="Feet">Feet<br>
   <input type="radio" name="input" value="Yards">Yards<br>
@@ -105,8 +107,27 @@
   <div class="center">
   <br><br>
   
-  <input type="button" value="Convert Units">
+  <input type="button" value="Convert Units" onclick="lencon()">
   </form>
   </div>
+<script>
+	function lencon(){
+			var in1 = document.getElementsByName('input');
+			var in1_value;
+		for(var i = 0; i < in1.length; i++){
+    		if(in1[i].checked){
+        	in1_value = in1[i].value;
+		}
+    		}
+		var out1 = document.getElementsByName('output');
+			var out1_value;
+		for(var i = 0; i < out1.length; i++){
+    		if(out1[i].checked){
+        	out1_value = out1[i].value;
+		}
+    		}
+		alert(out1_value + in1_value)
+	}
+</script>
 </body>
 </html>
