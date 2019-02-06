@@ -135,7 +135,7 @@
 		} else if (in1_value == "Inches" && out1_value == "Yards") {
     		onum=unum/(12*3);
 		} else if (in1_value == "Inches" && out1_value == "Miles") {
-    		onum=unum/(5280);
+    		onum=unum/(12*5280);
 		} else if (in1_value == "Inches" && out1_value == "Centimeters") {
     		onum=unum*2.54;
 		} else if (in1_value == "Inches" && out1_value == "Meters") {
@@ -146,8 +146,14 @@
     		onum=unum*12;
 		} else if (in1_value == "Feet" && out1_value == "Yards") {
     		onum=unum/3;
-		} else if (in1_value == "Feet" && out1_value == "Yards") {
-    		onum=unum/3;
+		} else if (in1_value == "Feet" && out1_value == "Miles") {
+    		onum=unum/5280;
+		} else if (in1_value == "Feet" && out1_value == "Centimeters") {
+    		onum=unum*30.48;
+		} else if (in1_value == "Feet" && out1_value == "Meters") {
+    		onum=unum*0.3048;
+		} else if (in1_value == "Feet" && out1_value == "Kilometers") {
+    		onum=unum*0.0003048;
   		} else {
     		onum=0;
   		}
