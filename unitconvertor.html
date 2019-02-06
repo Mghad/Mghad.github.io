@@ -31,18 +31,6 @@
   text-shadow: 1px 1px 2px black, 0 0 25px #c471ed, 0 0 5px #12c2e9;
 		}
   
-  input[type="radio"] {
-  background-color: white;
-  border: 8px solid #12c2e9;
-  color: #12c2e9;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-size: 30px;
-  text-shadow: 1px 1px 2px black, 0 0 25px #c471ed, 0 0 5px #f64f59;
-  }
- 
   h1 {
    color: white;
    text-shadow: 1px 1px 2px black, 0 0 25px #f64f59, 0 0 5px #12c2e9;
@@ -70,6 +58,40 @@
   width: 15%;
   }
 
+	.radio input[type='radio'] {
+  display: none;
+  /*removes original button*/
+}
+
+.radio label:before {
+  /*styles outer circle*/
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 1px;
+  border: 2px solid #12c2e9;
+  background-color: white;
+}
+
+.radio label {
+  position: relative;
+}
+
+.radio label input[type='radio']:checked+span {
+  /*styles inside circle*/
+  border-radius: 1px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  display: block;
+  background-color: #f64f59;
+}
 </style>
 </head>
 <body>
@@ -82,27 +104,30 @@
   <p>Convert From:</p>
   </div>
   <div class="center2">
-	  
-  <input type="radio" name="input" value="Inches" checked>Inches<br>
-  <input type="radio" name="input" value="Feet">Feet<br>
-  <input type="radio" name="input" value="Yards">Yards<br>
-  <input type="radio" name="input" value="Miles">Miles<br>
-  <input type="radio" name="input" value="Centimeters">Centimeters<br>
-  <input type="radio" name="input" value="Meters">Meters<br>
-  <input type="radio" name="input" value="Kilometers">Kilometers<br>
+	<div class="radio">  
+  <label><input type="radio" name="input" value="Inches" checked>Inches<span></span></label><br>
+  <label><input type="radio" name="input" value="Feet">Feet<span></span></label><br>
+  <label><input type="radio" name="input" value="Yards">Yards<span></span></label><br>
+  <label><input type="radio" name="input" value="Miles">Miles<span></span></label><br>
+  <label><input type="radio" name="input" value="Centimeters">Centimeters<span></span></label><br>
+  <label><input type="radio" name="input" value="Meters">Meters<span></span></label><br>
+  <label><input type="radio" name="input" value="Kilometers">Kilometers<span></span></label><br>
   <br>
+  </div>
   </div>
   <div class="center">
   <p>Convert To:</p>
   </div>
   <div class="center2">
-  <input type="radio" name="output" value="Inches" checked>Inches<br>
-  <input type="radio" name="output" value="Feet">Feet<br>
-  <input type="radio" name="output" value="Yards">Yards<br>
-  <input type="radio" name="output" value="Miles">Miles<br>
-  <input type="radio" name="output" value="Centimeters">Centimeters<br>
-  <input type="radio" name="output" value="Meters">Meters<br>
-  <input type="radio" name="output" value="Kilometers">Kilometers<br>
+  <div class="radio">
+  <label><input type="radio" name="output" value="Inches" checked>Inches<span></span></label><br>
+  <label><input type="radio" name="output" value="Feet">Feet<span></span></label><br>
+  <label><input type="radio" name="output" value="Yards">Yards<span></span></label><br>
+  <label><input type="radio" name="output" value="Miles">Miles<span></span></label><br>
+  <label><input type="radio" name="output" value="Centimeters">Centimeters<span></span></label><br>
+  <label><input type="radio" name="output" value="Meters">Meters<span></span></label><br>
+  <label><input type="radio" name="output" value="Kilometers">Kilometers<span></span></label><br>
+  </div>
   </div>
   <div class="center">
   <br><br>
