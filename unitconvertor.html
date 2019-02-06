@@ -209,6 +209,19 @@
 		} else if (in1_value == "Meters" && out1_value == "Kilometers") {
     		onum=unum/1000;
 			
+		} else if (in1_value == "Kilometers" && out1_value == "Inches") {
+    		onum=unum*39370.1
+		} else if (in1_value == "Kilometers" && out1_value == "Feet") {
+    		onum=unum*3280.84;
+		} else if (in1_value == "Kilometers" && out1_value == "Yards") {
+    		onum=unum*1093.61;
+		} else if (in1_value == "Kilometers" && out1_value == "Miles") {
+    		onum=unum*0.621371;
+		} else if (in1_value == "Kilometers" && out1_value == "Centimeters") {
+    		onum=unum*1000*100;
+		} else if (in1_value == "Kilometers" && out1_value == "Meters") {
+    		onum=unum*1000;
+			
   		} else {
     		onum=0;
   		}
