@@ -54,7 +54,6 @@
    text-shadow: 1px 1px 2px black, 0 0 25px #f64f59, 0 0 5px #12c2e9;
    font-size: 25px;
   }
-
   input[type=text] {
   border: 5px solid #12c2e9
   border: 3px solid #f64f59;
@@ -63,8 +62,12 @@
 	
   .center {
   margin: auto;
-  width: 100%;
-  padding: 10px;
+  width: 60%;
+  text-align: center;
+  }
+  .center2 {
+  margin: auto;
+  width: 15%;
   }
 </style>
 </head>
@@ -76,6 +79,8 @@
   <p>Insert Number:</p>
   <input type="text" name="num">
   <p>Convert From:</p>
+  </div>
+  <div class="center2">
   <input type="radio" name="input" value="Inches" checked>Inches<br>
   <input type="radio" name="input" value="Feet">Feet<br>
   <input type="radio" name="input" value="Yards">Yards<br>
@@ -84,7 +89,11 @@
   <input type="radio" name="input" value="Meters">Meters<br>
   <input type="radio" name="input" value="Centimeters">Kilometers<br>
   <br>
+  </div>
+  <div class="center">
   <p>Convert To:</p>
+  </div>
+  <div class="center2">
   <input type="radio" name="output" value="Inches" checked>Inches<br>
   <input type="radio" name="output" value="Feet">Feet<br>
   <input type="radio" name="output" value="Yards">Yards<br>
@@ -92,7 +101,8 @@
   <input type="radio" name="output" value="Centimeters">Centimeters<br>
   <input type="radio" name="output" value="Meters">Meters<br>
   <input type="radio" name="output" value="Centimeters">Kilometers<br>
-  
+  </div>
+  <div class="center">
   <br><br>
   
   <input type="button" value="Convert Units">
