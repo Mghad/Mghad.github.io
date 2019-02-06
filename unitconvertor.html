@@ -128,7 +128,30 @@
         	out1_value = out1[i].value;
 		}
     		}
-		alert(unum + " " + out1_value + " is " + onum + " " + in1_value)
+		if (in1_value == out1_value) {
+    		onum = unum;
+  		} else if (in1_value == "Inches" && out1_value == "Feet") {
+    		onum=unum/12;
+		} else if (in1_value == "Inches" && out1_value == "Yards") {
+    		onum=unum/(12*3);
+		} else if (in1_value == "Inches" && out1_value == "Miles") {
+    		onum=unum/(5280);
+		} else if (in1_value == "Inches" && out1_value == "Centimeters") {
+    		onum=unum*2.54;
+		} else if (in1_value == "Inches" && out1_value == "Meters") {
+    		onum=(unum*2.54)/100;
+		} else if (in1_value == "Inches" && out1_value == "Kilometers") {
+    		onum=((unum*2.54)/100)/1000;
+		} else if (in1_value == "Feet" && out1_value == "Inches") {
+    		onum=unum*12;
+		} else if (in1_value == "Feet" && out1_value == "Yards") {
+    		onum=unum/3;
+		} else if (in1_value == "Feet" && out1_value == "Yards") {
+    		onum=unum/3;
+  		} else {
+    		onum=0;
+  		}
+		alert(unum + " " + in1_value + " is " + onum + " " + out1_value)
 	}
 </script>
 </body>
