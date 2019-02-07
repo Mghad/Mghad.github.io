@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -26,8 +25,9 @@ body::after {
   color: #fff;
 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #f64f59; /* The typwriter cursor */
-   border-left: .15em solid #12c2e9; /* The typwriter cursor */
+  border-right: 10px solid #f64f59; /* The typwriter cursor */
+   border-left: 10px solid #12c2e9; /* The typwriter cursor */
+   border-bottom: 10px solid #ffffff; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   /*letter-spacing: .11em; /* Adjust as needed */
@@ -40,7 +40,7 @@ body::after {
 /* The typing effect */
 @keyframes slidein {
   from { width: 0 }
-  to { width: 97% }
+  to { width: 96% }
 }
 
 /* The typewriter cursor effect */
