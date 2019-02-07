@@ -30,22 +30,23 @@ body::after {
    border-left: .15em solid #12c2e9; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .12em; /* Adjust as needed */
+  /*letter-spacing: .11em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end 10;
+    /*typing 4s steps(10, end),*/
+    slidein 4s steps(100000,end);
+    /*blink-caret .0001s step-end;*/
 }
 
 /* The typing effect */
-@keyframes typing {
+@keyframes slidein {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 97% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #CE04FF }
+  50% { border-color: #FFFFFF }
 }
 
 html::before {
