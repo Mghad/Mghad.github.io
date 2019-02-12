@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-  /* this inital outline of a map using googl emaps was taken from the website given on learning suite https://developers.google.com/maps/documentation/javascript/tutorial */
   <head>
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
+      /* this inital outline of a map using googl emaps was taken from the website given on learning suite https://developers.google.com/maps/documentation/javascript/tutorial */
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
@@ -20,13 +20,14 @@
     </style>
   </head>
   <body>
+    <h1>Mitchell's Hometown</h1>
     <div id="map"></div>
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 38.760963, lng: -77.259292},
-          zoom: 8
+          zoom: 4
         });
       }
     </script>
