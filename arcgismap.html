@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title>AcrGIS Map</title>
     <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
     <script src="https://js.arcgis.com/4.8/"></script>
-    
-  </head>
-  <body>
     <script>
+    var map;
           require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
       const map = new Map({
         basemap: "streets-navigation-vector"
       });
     
       const view = new MapView({
-        container: "viewDiv",
+        container: "map",
         map: map,
         zoom: 12,
         center: {
@@ -22,6 +23,9 @@
       });
     });
     </script>
+  </head>
+  <body>
+    
+    <div id="map"></div>
   </body>
 </html>
-
