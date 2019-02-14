@@ -24,7 +24,42 @@
     }
   });
   
-  const contentString = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+  const contentString1 = "I would like to take my family down to <a href='https://www.nps.gov/zion/index.htm'>Zion National Park</a> " + 
+    " for a weekend" +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString2 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString3 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString4 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString5 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    const contentString6 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString7 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString8 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString9 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+    
+    const contentString10 = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
     " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
     "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
   
@@ -45,10 +80,197 @@
     },
     popupTemplate: {
       title: "Zion National Park",
-      content: contentString
+      content: contentString1
     }
-    
-    
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -109.045202,
+      latitude: 36.999093
+    },
+    popupTemplate: {
+      title: "Four Corners Monument",
+      content: contentString2
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -110.702501,
+      latitude: 38.568404
+    },
+    popupTemplate: {
+      title: "The Three Sisters",
+      content: contentString3
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.341573,
+      latitude: 41.980169
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString4
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.023438,
+      latitude: 37.316845
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString5
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.341573,
+      latitude: 41.980169
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString6
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.023438,
+      latitude: 37.316845
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString7
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.341573,
+      latitude: 41.980169
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString8
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.023438,
+      latitude: 37.316845
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString9
+    }
+  });
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.341573,
+      latitude: 41.980169
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString10
+    }
   });
 });
 
@@ -68,7 +290,7 @@
     </style>
   </head>
   <body>
-    <h1>Title</h1>
+    <h1>Utah Bucketlist</h1>
     <div id="map"></div>
   </body>
 </html>
