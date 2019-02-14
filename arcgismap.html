@@ -7,25 +7,68 @@
     <script src="https://js.arcgis.com/4.8/"></script>
     <script>
     var map;
-          require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
-      const map = new Map({
-        basemap: "streets-navigation-vector"
-      });
+         require([ "esri/Map", "esri/views/MapView" ], function(
+  Map, MapView
+) {
+  const map = new Map({
+    basemap: "streets-navigation-vector"
+  });
+
+  const view = new MapView({
+    container: "map",
+    map: map,
+    zoom: 6,
+    center: {
+      latitude: 39.488971,
+      longitude: -111.708676
+    }
+  });
+  
+  const contentString = "<a href='https://www.nps.gov/zion/index.htm'>Zion National Park:</a> " + 
+    " Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures." +
+    "<p><p><img src='https://media.deseretdigital.com/file/2576c93235?type=jpeg&quality=55&c=15&a=4379240d' alt='Zion National Park' height='150'>"; 
+  
+  view.graphics.add({
+    symbol: {
+      type: "text",
+      color: "#7A003C",
+      text: "\ue61d", // esri-icon-map-pin
+      font: {
+        size: 30,
+        family: "CalciteWebCoreIcons"
+      }
+    },
+    geometry: {
+      type: "point",
+      longitude: -113.023438,
+      latitude: 37.316845
+    },
+    popupTemplate: {
+      title: "Zion National Park",
+      content: contentString
+    }
     
-      const view = new MapView({
-        container: "map",
-        map: map,
-        zoom: 12,
-        center: {
-          latitude: 32.7353,
-          longitude: -117.1490
-        }
-      });
-    });
+    
+  });
+});
+
+
     </script>
+    <style>
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        }
+    #map{
+        height: 100%;
+        padding:0;
+        }
+    </style>
   </head>
   <body>
-    
+    <h1>Title</h1>
     <div id="map"></div>
   </body>
 </html>
