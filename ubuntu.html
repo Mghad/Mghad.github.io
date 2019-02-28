@@ -25,13 +25,13 @@
   });
   // got the urls for the dem and law enforcement shapefile from Riley's code, 
            var cops = new MapImageLayer({
-    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/LawEnforcement/MapServer",
+    url: "https://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/LawEnforcement/MapServer",
              sublayers: [{id: 0}]
   });
 
       
        var dem = new MapImageLayer({
-    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/DEM/MapServer",
+    url: "https://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/DEM/MapServer",
          sublayers: [{id: 0}]
   });
    map.add(cops);  // adds the layer to the map
