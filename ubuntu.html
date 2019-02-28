@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>ArcMap Layers</title>
+    <title>ArcMap Data</title>
     <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
     <script src="https://js.arcgis.com/4.8/"></script>
     <script>
@@ -25,13 +25,15 @@
   });
   // got the urls for the dem and law enforcement shapefile from Riley's code, 
            var cops = new MapImageLayer({
-    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/LawEnforcement/MapServer"
+    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/LawEnforcement/MapServer",
+             sublayers: [{id: 0}]
   });
   map.add(cops);  // adds the layer to the map
 });
       
        var dem = new MapImageLayer({
-    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/DEM/MapServer"
+    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/DEM/MapServer",
+         sublayers: [{id: 0}]
   });
   map.add(dem);  // adds the layer to the map
 });
