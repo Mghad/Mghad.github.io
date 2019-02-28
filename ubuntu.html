@@ -7,8 +7,9 @@
     <script src="https://js.arcgis.com/4.8/"></script>
     <script>
     var map;
-         require([ "esri/Map", "esri/views/MapView" ], function(
-  Map, MapView
+      //saw from Riley's code that I needed to add "esri/layers/MapImageLayer", "esri/layers/support/Sublayer" to get my code to work
+         require([ "esri/Map", "esri/views/MapView", "esri/layers/MapImageLayer", "esri/layers/support/Sublayer" ], function(
+  Map, MapView, MapImageLayer, Sublayer
 ) {
   const map = new Map({
     basemap: "streets-navigation-vector"
