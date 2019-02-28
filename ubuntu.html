@@ -5,6 +5,24 @@
     <title>AcrGIS Map</title>
     <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
     <script src="https://js.arcgis.com/4.8/"></script>
+    <script>
+    var map;
+         require([ "esri/Map", "esri/views/MapView" ], function(
+  Map, MapView
+) {
+  const map = new Map({
+    basemap: "streets-navigation-vector"
+  });
+  const view = new MapView({
+    container: "map",
+    map: map,
+    zoom: 14,
+    center: {
+      latitude: 40.249752,
+      longitude: -111.649354
+    }
+  });
+    </script>
     <style>
     html, body {
         height: 100%;
