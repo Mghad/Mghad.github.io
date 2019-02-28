@@ -16,12 +16,25 @@
   const view = new MapView({
     container: "map",
     map: map,
-    zoom: 14,
+    zoom: 12,
     center: {
       latitude: 40.249752,
       longitude: -111.649354
     }
   });
+  // got the urls for the dem and law enforcement shapefile from Riley's code, 
+           var cops = new MapImageLayer({
+    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/LawEnforcement/MapServer"
+  });
+  map.add(cops);  // adds the layer to the map
+});
+      
+       var dem = new MapImageLayer({
+    url: "http://geoserver2.byu.edu/arcgis/rest/services/TeamHermes/DEM/MapServer"
+  });
+  map.add(dem);  // adds the layer to the map
+});
+           
     </script>
     <style>
     html, body {
